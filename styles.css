@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box ;
+}
+html{
+    background: rgb(40,40,40);
+    display:flex; justify-content: center;
+}
+body{
+    display:flex;
+    min-width:1000px;
+    max-width:2000px;
+    overflow:hidden
+}
+
+#area-1{
+    height:100vh;
+    width: max(100px, 50%);
+
+    background-image: url(landscape_painting.png);
+
+    display:flex; align-items: center;
+
+    --logo-size: 200px;
+    
+    #logo-highlight{
+
+        width:100%;
+        height: calc(1.5*var(--logo-size));
+        background-color: rgba(255,255,255,0.5);
+
+        display:flex; justify-content:center; align-items:center;
+
+    }
+
+    #logo-area-1{
+        height:var(--logo-size);
+        width: auto;
+    }
+}
+
+
+#area-2{
+    height:100vh;
+    width: max(100px, 50%);  
+}
